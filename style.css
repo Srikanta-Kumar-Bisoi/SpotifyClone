@@ -1,0 +1,432 @@
+body{
+    font-family: Montserrat;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 0.5rem ;
+    
+}
+.sidebar{
+    background-color:black;
+    width: 340px;
+     border-radius: 1rem;  /* 1rem = 16 px */
+     margin-right: 0.5rem;
+}
+
+.main-content{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 0rem 1.5rem 0rem 1.5rem;
+
+}
+
+.music-player{
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 72px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+}
+.nav-option:hover{
+   opacity: 1;
+}
+
+.nav-option i {
+    font-size: 1.25rem;
+}
+
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 1rem ;
+}
+
+.library{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.75rem;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib-options img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.icons{
+    font-size: 1.25rem;
+    opacity: 0.7;
+  
+}
+
+.icons i {
+    opacity: 0.7;
+    margin-right: 1rem ;
+}
+
+.icons i:hover{
+    opacity: 1.5;
+}
+
+.box{
+    height: 8rem ;
+    background-color: #232323;
+     border-radius: 0.75rem;
+     margin: 0.75rem 0 2.5rem 0 ;
+     padding: 0.75rem 1.25rem ;
+}
+
+.box-p1{
+    font-size: 1rem;
+    font-weight: 600;
+}
+.box-p2{
+    font-size: 0.75rem;
+    opacity: 0.9;
+ 
+}
+
+.badge{
+    background-color: white;
+    border: none;
+    border-radius: 100px;
+    padding:0.25rem  1rem;
+    font-weight: 700;
+    /* margin-top: 0.5 rem; */
+    height: 2rem;
+    width: fit-content;
+}
+
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#121212;
+    padding: 1rem 0rem 1rem 0rem;
+    z-index: 100;
+}
+
+.sticky-nav-icons{
+    margin-left: 0.5rem;
+   
+}
+
+.sticky-nav-options{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+
+.nav-item {
+    margin-right: 1rem;
+}
+
+.dark-badge{
+    background-color: #232323;
+    color: white;
+}
+
+@media (max-width:1000px) {
+      .hide{
+        display: none;
+      }
+    
+}
+
+
+.card{
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.card-img{
+    width:100% ;
+    border-radius: 0.5rem;
+}
+
+.card-title{
+    font-weight: 600;
+}
+.card-info{
+    font-size: 0.75rem;
+    opacity: 0.7;
+}
+
+
+.footer{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line{
+    width: 90%;
+    height: 30%;
+    border-top: 1px solid white;
+    opacity: 0.4rem;
+}
+.music-player{
+    height: 73px;
+    display: flex;
+    margin-left: 0.5rem;
+   
+}
+
+.left-player{
+     width: 25%;
+     height: 65px;
+      display: flex;
+
+      /* background-color: rgb(141, 56, 56); */
+
+}
+
+
+.right-player{
+       width: 25%;
+       height: 65px;
+       background-color:rgb(0, 0, 0);
+       margin-right: 0.5rem;
+}
+.simg img{
+    border-radius: 1rem;
+    padding: 0.3rem;
+    padding-left: 0.5rem;
+    margin-right: 0.5rem;
+    height: 56px;
+    width: 61px;
+    
+}
+
+
+.sinfo{
+    justify-items: center;
+    /* width: 1.5rem; */
+    /* width: 50%; */
+}
+
+.sinfo1{
+  
+   
+   font-weight: 500;
+   font-size: 0.8rem;
+   margin-top: 0.9rem;
+   padding-top: 0.2rem;
+   margin-bottom: 0.2rem;
+   
+}
+.sinfo2{
+    margin-top: 0.2rem;
+   font-size: 0.7rem;
+   opacity: 0.7;
+   overflow: hidden;
+   height: 1rem;
+}
+
+.sicon{
+    display: flex;
+    width: 30%;
+ 
+    margin-left: 0.2rem;
+    margin-top: 0.3rem;
+
+    /* background-color: white; */
+
+    overflow: hidden;
+   position: relative;
+    
+    
+    
+}
+
+.si1{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-top: 1.2rem;
+    padding-left: 3rem;
+    
+}
+
+.si2{
+    height: 2rem;
+    width: 2rem;
+    
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+   
+}
+
+
+
+.middle-player{
+    width: 50%;
+    height: 65px;
+    /* background-color: rgb(54, 46, 30); */
+    
+}
+
+.upper-plyer{
+    margin-top: 0.5rem;
+    height: 2rem;
+    display: flex;
+    /* justify-content: space-between ; */
+    justify-content: center;
+    
+}
+
+
+
+
+.icon1{
+    height: 1rem;
+    /* background-color: red; */
+    margin: 0.4rem 1rem 0rem 1rem;
+    opacity: 0.7;
+    
+}
+.icon2{
+    height:1rem ;
+    margin: 0.4rem 1rem 0rem 1rem;
+    opacity: 0.7;
+
+}
+
+.icon3{
+    height: 2.1rem;
+    margin: 0rem 1rem 0rem 1rem;
+}
+.icon4{
+    height: 1rem;
+    margin: 0.4rem 1rem 0rem 1rem;
+    opacity: 0.7;
+
+}
+.icon5{
+    height:1rem;
+    margin: 0.4rem 1rem 0rem 1rem;
+    opacity: 0.7;
+
+}
+
+
+.lower-plyer{
+    justify-items: center;
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+   margin-top: 0.5rem;
+   appearance: none;
+}
+
+.bar{
+    width: 70%;
+    height: 0.2rem;
+    margin-top: 0.5rem;
+    appearance: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    background-color: rgb(15, 184, 15);
+}
+
+.time{
+    font-size: 0.7rem;
+    margin-top: 0.1rem;
+    margin-right: 0.4rem;
+    margin-left: 0.4rem;
+}
+
+
+.right-player{
+    display: flex;
+    justify-items: center;
+   
+}
+
+.cicons{
+    height: 2.5rem;
+    margin: 0.5rem 0.2rem 0.5rem 0.2rem;
+    padding-top: 0.5rem;
+
+}
+.cicons3{
+    height: 1.5rem;
+    margin: 1rem 0.2rem 1rem 0.2rem;
+    opacity: 0.7;
+    padding-top: 0.5rem ;
+
+
+}
+
+.cicons4{
+    height: 1.1rem;
+    margin: 1rem 0.2rem 1rem 0.2rem;
+  
+    opacity: 0.7;
+    padding-top: 0.7rem;
+}
+
+.bar2{
+    margin: 2.2rem;
+    margin-left: 0.1rem;
+    width:5.5rem ;
+}
+.bar2::-webkit-slider-thumb{
+    height: 0.8rem;
+    width: 0.8rem;
+}
+
+#f{
+    font-size: small;
+}
